@@ -1,0 +1,30 @@
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    position: relative;
+
+    img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .favorite {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+        color: red;
+    }
+    .cart {
+        position: absolute;
+        z-index: 1;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        color: yellow;
+    }
+}

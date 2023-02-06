@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto Mono", monospace;
+  font-family: cursive;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F0F7EE;
+  color: #2E4057;
+}
+header h2 {
+  font-size: 25px;
+  font-weight: 800;
+}
+header img {
+  width: 24px;
+  height: 24px;
+}
+
+.row {
+  background-color: #AFDEDC;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+@media only screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  position: relative;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.column .favorite {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: red;
+}
+.column .cart {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: yellow;
+}
+
+.cart-page .total-cost {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: end;
+  margin: 1rem;
+}
+.cart-page .order-button {
+  display: flex;
+  justify-content: center;
+}
+.cart-page .button-56 {
+  align-items: center;
+  background-color: #f0f7ee;
+  border: 2px solid #111;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #2e4057;
+  cursor: pointer;
+  display: flex;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  height: 48px;
+  font-weight: 900;
+  justify-content: center;
+  line-height: 24px;
+  max-width: 100%;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.cart-page .button-56:after {
+  background-color: #2e4057;
+  border-radius: 8px;
+  content: "";
+  display: block;
+  height: 48px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: -2px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+  z-index: -1;
+}
+.cart-page .button-56:hover:after {
+  transform: translate(0, 0);
+}
+.cart-page .button-56:active {
+  background-color: #f0f7ee;
+  outline: 0;
+  background-color: #2e4057;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  color: #ffb7ff;
+}
+.cart-page .button-56:hover {
+  outline: 0;
+  background-color: #2e4057;
+  color: white;
+}
+.cart-page .empty-text {
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+@media (min-width: 768px) {
+  .button-56 {
+    padding: 0 40px;
+  }
+}
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cart-item p {
+  font-size: 20px;
+  width: 100%;
+  font-weight: 800;
+  text-align: end;
+}
+.cart-item .delete-icon {
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  font-size: 20px;
+  color: yellow;
+  cursor: pointer;
+}
+.cart-item .cart-img {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid yellow;
+}

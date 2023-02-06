@@ -1,0 +1,30 @@
+.cart-item {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    p {
+        font-size: 20px;
+        width: 100%;
+        font-weight: 800;
+        text-align: end;
+    }
+
+    .delete-icon {
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        font-size: 20px;
+        color: yellow;
+        cursor: pointer;
+    }
+
+    .cart-img {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border: 1px solid yellow;
+    }
+}
